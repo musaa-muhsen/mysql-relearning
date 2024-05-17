@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.12.12",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
     "tsx": "^4.10.4",
     "typescript": "^5.4.5"
   }
