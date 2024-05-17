@@ -3,13 +3,16 @@ import {
      employees,
      employeesSelect, 
      employeesRename,
-     deleteTable
-    } from './queries'
-async function createTable() {
-  const createTableSQL = deleteTable;
+     deleteTable,
+     addToTable,
+     alterTableType,
+    } from './queries';
 
+
+async function createTable() {
+  
   try {
-    const [result] = await pool.query(createTableSQL);
+    const [result] = await pool.query();
     console.log('RESULT',result)
    // console.log('Table created successfully:', result);
   } catch (err) {

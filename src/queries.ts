@@ -19,4 +19,14 @@ export const deleteTable:string = `
    DROP TABLE users
 ` 
 
+//add to able 
+export const addToTable: string = `
+   ALTER TABLE employees 
+   ADD phone_number VARCHAR(15);
+`
+
+// alter phone number to email 
+export const alterTable: string = `
+  ALTER TABLE employees CHANGE COLUMN phone_number email varchar(15);
+`
 
