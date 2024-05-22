@@ -72,10 +72,12 @@ export const insertMultipleValuesWithLimitedRows: string = `
    INSERT INTO employees (employee_id, first_name, last_name)
    VALUES (6, "Sheldon", "Plankton");
 `
-// selected columns 
+// selected columns, you change the order of the columns too 
 export const selectedColumns: string = `
   SELECT first_name, last_name 
   FROM employees;
 `
+
+
 
 
