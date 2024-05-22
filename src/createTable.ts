@@ -6,13 +6,21 @@ import {
      deleteTable,
      addToTable,
      alterTableType,
+     alterDataType,
+     changeColumn,
+     changeColumnFirst,
+     deleteColumn,
+     insertSingleValueToRow,
+     insertMultipleValuesToRow,
+     insertMultipleValuesWithLimitedRows,
+     selectedColumns
     } from './queries';
 
 
 async function createTable() {
   
   try {
-    const [result] = await pool.query();
+    const [result] = await pool.query(selectedColumns);
     console.log('RESULT',result)
    // console.log('Table created successfully:', result);
   } catch (err) {
